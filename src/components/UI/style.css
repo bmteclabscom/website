@@ -1,0 +1,87 @@
+.projects .carousel .flex img {
+  /* margin-top: 58px; */
+  height: 350px;
+  width: 680px;
+  border-radius: 10px;
+  position: relative;
+  float: left;
+}
+
+.projects .overlay-img {
+  height: 350px;
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(88.5deg, #fffcfc 1.55%, rgba(255, 252, 252, 0) 99.02%);
+  z-index: 1;
+}
+
+.projects .previous .overlay-img {
+  height: 350px;
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-88.5deg, #fffcfc 1.55%, rgba(255, 252, 252, 0) 99.02%);
+  z-index: 1;
+}
+
+.projects .selected .overlay-img {
+  height: 0px;
+  z-index: -1;
+}
+
+.projects .carousel .slide {
+  margin: 0;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .carousel.slideer {
+  position: initial;
+  display: flex;
+}
+
+/* .carousel .selected .flex {
+  transition: all 0s;
+} */
+.projects .carousel .selected .flex img {
+  /* margin-top: 58px; */
+  border: 1px solid #d9d9d9;
+  padding: 13px 8px;
+  height: 400px;
+  width: 745px;
+  transition: all 0s;
+}
+
+.partner .carousel .slide {
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow_item {
+  width: 56%;
+  overflow: visible;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.reviews .carousel .control-dots {
+  bottom: -60px;
+}
+.reviews .carousel.carousel-slider {
+  overflow: visible;
+}

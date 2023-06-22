@@ -1,0 +1,5 @@
+export * from './ButtonStart'
+export * from './CardAbout'
+export * from './CardProject'
+export * from './CardService'
+export * from './CardPeople'

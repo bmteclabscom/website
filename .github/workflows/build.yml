@@ -1,0 +1,31 @@
+name: Node CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: node:18
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run linter
+        run: |
+          npm ci
+          npm run lint
+        env:
+          CI: true
+          NODE_ENV: test
+      - name: Build the project
+        run: |
+          npm run build
+        env:
+          CI: true
+          # REACT_APP_SITE_KEY: 6LcoE3IkAAAAAGftZY3XUmiWr54wPhl9rBpr0GRV
+          REACT_APP_SITE_KEY: 6LeebZskAAAAAMialN62mG8MKEjvmtLr1UTp03wi
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build
