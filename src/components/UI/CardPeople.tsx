@@ -28,8 +28,8 @@ export const CardPeople: React.FC<CardPeopleProps> = ({
   return (
     <div className="max-w-[300px]">
       <div className="relative  w-[200px] m-auto">
-        <img src={img} className="rounded-full" />
-        {icon && <img src={icon.img} className={`${icon.className} absolute w-[50px]`} />}
+        <img src={img} className="rounded-full" alt="img" />
+        {icon && <img src={icon.img} className={`${icon.className} absolute w-[50px]`} alt="img" />}
       </div>
       <div className="flex flex-col space-y-1 text-center mt-1">
         <span className="font-bold text-xl text-cblack-500">{name}</span>
@@ -40,7 +40,7 @@ export const CardPeople: React.FC<CardPeopleProps> = ({
         <div className="flex w-full justify-center space-x-4 mt-2">
           {social.map((item: SocialLink, index: number) => (
             <a key={index} href={item.url} target="_blank">
-              <img src={item.icon} className="w-[30px]" />
+              <img src={item.icon} className="w-[30px]" alt="img" />
             </a>
           ))}
         </div>

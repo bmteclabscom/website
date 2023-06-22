@@ -8,7 +8,7 @@ export const CardService: React.FC<CardServiceProp> = ({ img, title, content }: 
   return (
     <div className="flex flex-col space-y-4">
       <div>
-        <img src={img} className="h-[100px]" />
+        <img src={img} className="h-[100px]" alt="img" />
       </div>
       <div>
         <span className="font-bold text-xl text-cblack-500"> {title} </span>

@@ -5,7 +5,6 @@ import CustomerIcon from '@assets/icons/customer.png'
 import SafeIcon from '@assets/icons/safe.png'
 import timeIcon from '@assets/icons/time.png'
 import { CardAbout, CardAboutProps } from '@/components/UI/CardAbout'
-import { CardService } from '@/components/UI/CardService'
 
 const items: Array<CardAboutProps> = [
   {
@@ -31,7 +30,7 @@ export const About = () => {
     <div className="bg-cwhite-400 py-[122px] pb-[106px] px-[124px]">
       <div className="flex justify-between p-16">
         <div>
-          <img src={Hero} className="w-[490px]" />
+          <img src={Hero} className="w-[490px]" alt="img" />
         </div>
         <div className="">
           <div className="relative">
@@ -41,7 +40,7 @@ export const About = () => {
               <span> for all your digital needs</span>
             </div>
             <div className="w-[100px] absolute top-0 right-0 ">
-              <img src={Target} />
+              <img src={Target} alt="img" />
             </div>
           </div>
           <div className="max-w-[608px]">

@@ -12,10 +12,15 @@ export const Home = () => {
           <span className="text-cpurple-500">digital </span>
           <span>grow your business</span>
         </div>
-        <ButtonStart title={'Get Started'} onClick={() => {}} />
+        <ButtonStart
+          title={'Get Started'}
+          onClick={() => {
+            console.log('clicked')
+          }}
+        />
       </div>
       <div className="md:absolute md:w-[500px] md:h-[400px] xl:w-[775px] xl:h-[575px] md:right-10 md:bottom-0">
-        <img src={HeroImg} />
+        <img src={HeroImg} alt="img" />
       </div>
     </div>
   )

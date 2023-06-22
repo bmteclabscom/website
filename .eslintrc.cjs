@@ -15,9 +15,18 @@ module.exports = {
     },
     // Tells eslint how to resolve imports
     'import/resolver': {
+      typescript: {},
       node: {
         paths: ['src'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        moduleDirectory: ['node_modules', 'src/', 'src/assets', 'src/components'],
+      },
+      alias: {
+        map: [
+          ['@', './src'],
+          ['@assets', './src/assets'],
+          ['@components', './src/components'],
+        ],
       },
     },
   },
@@ -36,5 +45,7 @@ module.exports = {
       },
     ],
     'react/react-in-jsx-scope': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
   },
-};
+}

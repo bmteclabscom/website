@@ -45,9 +45,12 @@ export const Projects = () => {
           </div>
         </div>
         <div className="w-full relative projects">
-          <i className="absolute bg-transparent  left-[270px] top-[50%] -translate-y-[50%] z-50 hover:cursor-pointer">
-            <img src={Prev} alt="Prev" onClick={onPrev} width="50" />
-          </i>
+          <div
+            className="absolute bg-transparent  left-[270px] top-[50%] -translate-y-[50%] z-50 hover:cursor-pointer"
+            onClick={onPrev}
+          >
+            <img src={Prev} alt="Prev" width="50" />
+          </div>
           <Carousel
             centerMode={true}
             swipeScrollTolerance={10}
@@ -65,13 +68,16 @@ export const Projects = () => {
               <CardProject key={index} url={url} />
             ))}
           </Carousel>
-          <i className="absolute bg-transparent  right-[270px] top-[50%] -translate-y-[50%] z-50 hover:cursor-pointer">
-            <img src={Next} alt="Next" onClick={onNext} width="50" />
-          </i>
+          <div
+            className="absolute bg-transparent  right-[270px] top-[50%] -translate-y-[50%] z-50 hover:cursor-pointer "
+            onClick={onNext}
+          >
+            <img src={Next} alt="Next" width="50" />
+          </div>
           <div className="absolute"></div>
         </div>
         <div className="w-full flex justify-center ">
-          <img src={DisplayBottomImg} className="w-[450px]" />
+          <img src={DisplayBottomImg} className="w-[450px]" alt="img" />
         </div>
       </div>
     </div>

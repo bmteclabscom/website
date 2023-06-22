@@ -27,8 +27,8 @@ export const Team = () => {
         ))}
       </div>
       <div>
-        <img src={HelixSmall} className="absolute right-0 top-32 w-[170px]" />
-        <img src={Helix} className="absolute left-0-0 bottom-0 w-[170px]" />
+        <img src={HelixSmall} className="absolute right-0 top-32 w-[170px]" alt="img" />
+        <img src={Helix} className="absolute left-0-0 bottom-0 w-[170px]" alt="img" />
       </div>
     </div>
   )

@@ -34,7 +34,12 @@ export const Contact = () => {
     <div>
       <div className="bg-cblack-500 flex justify-between items-center py-[57px] pl-[139px] pr-[122px]">
         <span className="font-semibold text-[40px] text-white">Got a project in mind?</span>
-        <ButtonStart title="Get Started" onClick={() => {}} />
+        <ButtonStart
+          title="Get Started"
+          onClick={() => {
+            console.log('clicked')
+          }}
+        />
       </div>
       <div className="bg-cblack-600 pt-[80px] pb-[100px] pl-[139px] pr-[110px]">
         <div className="flex justify-start">
@@ -47,9 +52,9 @@ export const Contact = () => {
               pero la mayoría sufrió alteraciones en alguna manera
             </div>
             <div className="flex justify-start space-x-4 h-[30px] mt-[33px]">
-              <img src={FBIcon} />
-              <img src={LNKIcon} />
-              <img src={IGIcon} />
+              <img src={FBIcon} alt="img" />
+              <img src={LNKIcon} alt="img" />
+              <img src={IGIcon} alt="img" />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 max-w-[220px]">
